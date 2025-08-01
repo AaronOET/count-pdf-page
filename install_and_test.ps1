@@ -8,7 +8,7 @@ try {
     $pythonVersion = python --version 2>&1
     Write-Host "✅ Python found: $pythonVersion" -ForegroundColor Green
 } catch {
-    Write-Host "❌ Python not found. Please install Python 3.8+ first." -ForegroundColor Red
+    Write-Host "❌ Python not found. Please install Python 3.9+ first." -ForegroundColor Red
     exit 1
 }
 

@@ -73,8 +73,8 @@ print(report)
 
 ## Requirements
 
-- Python 3.8+
-- PyPDF2
+- Python 3.9+
+- pypdf
 
 ## Development
 
