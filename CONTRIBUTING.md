@@ -6,7 +6,7 @@ Thank you for your interest in contributing to PDF Page Counter! This document p
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/count-pdf-page.git
+   git clone https://github.com/AaronOET/count-pdf-page.git
    cd count-pdf-page
    ```
 

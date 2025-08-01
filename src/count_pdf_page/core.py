@@ -3,7 +3,7 @@ Core functionality for PDF page counting.
 """
 
 import os
-import PyPDF2
+import pypdf
 from datetime import datetime
 from typing import List, Tuple, Union
 
@@ -27,7 +27,7 @@ def count_pdf_pages(pdf_path: str) -> int:
 
     try:
         with open(pdf_path, "rb") as file:
-            pdf_reader = PyPDF2.PdfReader(file)
+            pdf_reader = pypdf.PdfReader(file)
             return len(pdf_reader.pages)
     except Exception as e:
         print(f"Error reading {pdf_path}: {e}")

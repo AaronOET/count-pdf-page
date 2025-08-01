@@ -48,7 +48,7 @@ class TestCoreFunctionality(unittest.TestCase):
         self.assertIn("Total pages:** 0", report)
         self.assertIn("Average pages per file:** N/A", report)
 
-    @patch("count_pdf_page.core.PyPDF2.PdfReader")
+    @patch("count_pdf_page.core.pypdf.PdfReader")
     @patch("builtins.open", new_callable=mock_open)
     @patch("os.path.exists")
     def test_count_pdf_pages_success(self, mock_exists, mock_file, mock_reader):
@@ -70,7 +70,7 @@ class TestCoreFunctionality(unittest.TestCase):
         with self.assertRaises(FileNotFoundError):
             count_pdf_pages("nonexistent.pdf")
 
-    @patch("count_pdf_page.core.PyPDF2.PdfReader")
+    @patch("count_pdf_page.core.pypdf.PdfReader")
     @patch("builtins.open", new_callable=mock_open)
     @patch("os.path.exists")
     def test_count_pdf_pages_error(self, mock_exists, mock_file, mock_reader):

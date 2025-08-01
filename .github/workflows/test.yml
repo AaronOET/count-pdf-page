@@ -38,7 +38,7 @@ jobs:
     
     - name: Test with pytest
       run: |
-        pytest tests/ --cov=pdf_page_counter --cov-report=xml
+        pytest tests/ --cov=count_pdf_page --cov-report=xml
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
